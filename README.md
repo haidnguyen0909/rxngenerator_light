@@ -42,6 +42,6 @@ The generated molecules and associated reaction trees are saved in file: "Result
 The Bayesian optimization experiments use sparse Gaussian processes coded in theano. To install Theano, go to the folder Theano-master and type: python setup.py install
 
 Then, go to the folder bo and type the following command to run Bayesian optimization:
-python run_bo.py -w 200 -l 50 -d 2 -r 1 -t "../data/data.txt" -s "../weights/rxnvae_weight.npy.npy" -m "qed"
+python fast_bo.py -w 200 -l 50 -d 2 -r 1 -t "../data/data.txt" -s "../weights/rxnvae_weight.npy.npy" -m "qed"
 
 Please change the parameter -r with different random seed numbers. We performed 10 times of running BO, which results in 10 files of valid reaction trees saved in the folder Results. 
